@@ -76,3 +76,102 @@ th:hover {
     border-radius: 50%;
     margin-right: 20px;
 }
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfb8d3;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d862be;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #d862be;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d862be;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    margin-bottom: 60px; 
+}
+
+/* Cartões dos Desenvolvedores */
+.dev-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.dev-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.dev-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.dev-card h3 {
+    color: #d862be;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.dev-card p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: justify;
+}
+

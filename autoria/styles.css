@@ -1,4 +1,4 @@
-/* Garante que o rodapé fique no fim da página sem sobrepor o conteúdo */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -45,7 +45,7 @@ nav ul li a:hover {
 
 /* Conteúdo Principal */
 main {
-    flex: 1; /* Garante que o conteúdo ocupe todo o espaço disponível */
+    flex: 1; 
     padding: 20px;
 }
 
@@ -56,7 +56,7 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Empurra o rodapé para o final da página */
+    margin-top: auto; 
 }
 
 /* Cartões dos Desenvolvedores */
@@ -105,8 +105,8 @@ table {
 
 table, th, td {
     border: 1px solid black;
-    padding: 10px; /* Adiciona espaçamento interno */
-    text-align: left; /* Alinha o texto à esquerda para melhor visualização */
+    padding: 10px; 
+    text-align: left; 
 }
 
 th {

@@ -39,4 +39,3 @@ function ordenarTabela(coluna) {
 
     rows.forEach(row => tbody.appendChild(row)); 
 }
-

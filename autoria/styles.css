@@ -1,88 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
+/* Garante que o rodapé fique no fim da página sem sobrepor o conteúdo */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #dfb8d3;
-}
-
-header {
-    background-color: #d862be;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #d862be;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th {
-    background-color: #f2f2f2;
-    cursor: pointer;
-}
-
-th:hover {
-    background-color: #ddd;
-}
-
-.dev {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.dev img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-/* Estilo geral */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #dfb8d3;
+    flex-direction: column;
 }
 
 /* Cabeçalho */
@@ -121,21 +43,20 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Conteúdo Principal */
+main {
+    flex: 1; /* Garante que o conteúdo ocupe todo o espaço disponível */
+    padding: 20px;
+}
+
 /* Rodapé */
 footer {
     background-color: #d862be;
     color: white;
     padding: 10px;
     text-align: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-}
-
-/* Conteúdo Principal */
-main {
-    padding: 20px;
-    margin-bottom: 60px; 
+    margin-top: auto; /* Empurra o rodapé para o final da página */
 }
 
 /* Cartões dos Desenvolvedores */
@@ -175,3 +96,24 @@ main {
     text-align: justify;
 }
 
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda para melhor visualização */
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #ddd;
+}
